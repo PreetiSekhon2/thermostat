@@ -14,12 +14,8 @@ function Thermostat(){
 
   Thermostat.prototype.up = function(){
     if ((this.powerMode === true) && (this.temp < MAX_TEMP_POWER)){
-      // console.log("up - if");
-      // console.log(this.temp);
       this.temp++;
     } else if ((this.powerMode === false) && (this.temp < MAX_TEMP)){
-      // console.log("up - else");
-      // console.log(this.temp);
       this.temp++;
     }
   };
